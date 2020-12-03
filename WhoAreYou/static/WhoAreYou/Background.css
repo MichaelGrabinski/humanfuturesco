@@ -1,0 +1,153 @@
+/* Sytle Background */
+
+.cb-slideshow,
+.cb-slideshow:after { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -10; 
+
+}
+.cb-slideshow:after { 
+    content: '';
+    background: transparent url(/static/WhoAreYou/Images/gradient.jpg) repeat top left; 
+}
+
+/* Hides Dots */
+
+.cb-slideshow li {
+
+    list-style-type: none;
+}
+
+
+/* Image Span */
+
+.cb-slideshow li span { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -15px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 50s linear infinite 0s; 
+}
+
+
+/* Title Span */
+
+.cb-slideshow li div { 
+    z-index: 1000;
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    animation: titleAnimation 50s linear infinite 0s; 
+}
+.cb-slideshow li div h3 { 
+    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+    -webkit-text-stroke-width: 2.5px;
+    -webkit-text-stroke-color: black;
+    font-size: 150px;
+    padding: 0;
+    line-height: 150px; 
+    position: relative;
+    top: 150px;
+    left: -400px;
+    
+}
+
+
+/* Background images defined */
+
+.cb-slideshow li:nth-child(1) span { 
+    background-image: url(/static/WhoAreYou/Images/Space.jpg) 
+}
+.cb-slideshow li:nth-child(2) span { 
+    background-image: url(/static/WhoAreYou/Images/RocketPart.jpg);
+    animation-delay: 8s; 
+}
+.cb-slideshow li:nth-child(3) span { 
+    background-image: url(/static/WhoAreYou/Images/earthfromspace.jpg);
+    animation-delay: 16s; 
+}
+.cb-slideshow li:nth-child(4) span { 
+    background-image: url(/static/WhoAreYou/Images/RedSpot.jpg);
+    animation-delay: 24s; 
+}
+.cb-slideshow li:nth-child(5) span { 
+    background-image: url(/static/WhoAreYou/Images/Nebula.jpg);
+    animation-delay: 32s; 
+}
+.cb-slideshow li:nth-child(6) span { 
+    background-image: url(/static/WhoAreYou/Images/B&WSaturn.jpg);
+    animation-delay: 40s; 
+}
+
+
+.cb-slideshow li:nth-child(2) div { 
+    animation-delay: 8s; 
+}
+.cb-slideshow li:nth-child(3) div { 
+    animation-delay: 16s; 
+}
+.cb-slideshow li:nth-child(4) div { 
+    animation-delay: 24s; 
+}
+.cb-slideshow li:nth-child(5) div { 
+    animation-delay: 32s; 
+}
+.cb-slideshow li:nth-child(6) div { 
+    animation-delay: 40s; 
+}
+
+
+
+/* Image animation */
+
+@keyframes imageAnimation { 
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    8% { opacity: 1; animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+
+/* Title animation */
+
+@keyframes titleAnimation { 
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+
+/* For browsers that don’t support animations */
+
+    .no-cssanimations .cb-slideshow li span{
+	opacity: 1;
+    }
+
+
+/* Screen size (Phone/Computer) */
+
+    @media screen and (max-width: 1140px) { 
+        .cb-slideshow li div h3 { font-size: 140px }
+    }
+    @media screen and (max-width: 600px) { 
+        .cb-slideshow li div h3 { font-size: 80px }
+    }
+

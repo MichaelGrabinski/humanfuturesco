@@ -1,0 +1,145 @@
+body {
+
+    background-color: lightslategray;
+    z-index: 1;
+    overflow: hidden
+}
+
+#top-main {
+    left: 25px;
+    top: 0px;
+    position: absolute;
+    z-index: 4;
+
+}
+
+#left-side {
+    left: 0px;
+    top: 0px;
+    width: 700px;
+    height: 1080px;
+    background-color: #003781;
+    position: absolute;
+    z-index: 2;
+}
+
+#right-side {
+    left: 400px;
+    top: 0px;
+    position: absolute;
+    
+    border-bottom: 750px solid rgb(68, 66, 66);
+    border-left: 750px solid transparent;
+    z-index: 3;
+}
+
+#right-side2 {
+    position: absolute;
+    top: -30px;
+    right: -50px;
+  width: 750px;
+  height:800px;
+  background-color: rgba(8, 8, 17, 0.644);
+    -webkit-transform: perspective(300px) rotateX(-5deg);
+  -o-transform: perspective(300px) rotateX(-5deg);
+  -moz-transform: perspective(300px) rotateX(-5deg);
+  -webkit-transform-origin: 100% 50%;
+  -moz-transform-origin: 100% 50%;
+  -o-transform-origin: 100% 50%; 
+  transform-origin: 100% 50%;
+
+  z-index: 5;
+}
+
+#center-side {
+    display: flex;
+    position: absolute;
+    top: -150px;
+    right: -90px;
+  width: 500px;
+  height:280px;
+  background-color: rgb(73, 73, 117, 0.5);
+  -webkit-transform: perspective(300px) rotateX(30deg);
+  -o-transform: perspective(300px) rotateX(30deg);
+  -moz-transform: perspective(300px) rotateX(30deg);
+  -webkit-transform-origin: 100% 50%;
+  -moz-transform-origin: 100% 50%;
+  -o-transform-origin: 100% 50%; 
+  transform-origin: 100% 50%;
+  margin: 10px 90px;
+  z-index: 1;
+}
+
+
+#home-title {
+
+position: relative;
+left: 25px;
+color: rgba(0, 0, 0, 0);
+font-family: 'Major Mono Display', monospace;
+font-size: 3.5em;
+-webkit-text-stroke-width: 2.5px;
+-webkit-text-stroke-color: white;
+
+}
+
+#home-slogan {
+position: relative;
+left: 25px;
+color: black;
+font-family: 'Major Mono Display', monospace;
+font-size: 1.5em;
+-webkit-text-stroke-width: 0.6px;
+    -webkit-text-stroke-color: white;
+}
+
+#NavMain {
+
+    color: white;
+    
+    font-size: 25px;
+
+    position: absolute;
+    top: 40px;
+    left: 645px;
+    z-index: 120;
+
+}
+
+#NavMain a {
+    font-family: 'Major Mono Display', monospace;
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    padding-right: 13px;
+    margin-bottom: 18px;
+
+}
+
+
+
+
+
+.quote-body { 
+    margin: auto; 
+    width: 400px; 
+    height: 200px; 
+    margin-top: 150px;
+   }
+   #quote { 
+    font-size: 35px; 
+    font-weight: bold; 
+    
+   }
+   .author {
+    font-weight: normal;
+    font-size: 18px
+   }
+
+   #quotePos {
+    position: absolute;
+    top: 450px;
+    left: 720px;
+    color: white;
+    z-index: 130;
+   }

@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  <link href="{% static 'WhoAreYou/styles.css' %}" rel="stylesheet">
+        <title>Hello!</title>
+    </head>
+    <body>
+    <p>Hello I am Michael!</p>
+    <p id="SecLine">What is your name?</p>
+
+    <form action="{% url 'index' %}" method="post">
+        {% csrf_token %}
+        {{ form }}
+        Name: <input id="Name" type="text" name="name"><br/>
+        <input id="SubmitButton" type="submit">
+    </form>
+    </body>
+</html>

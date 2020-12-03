@@ -1,0 +1,175 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+<!--
+      <meta http-equiv="refresh" content="15; G:\My Drive\Personal\MyWeb\WhoAreYou\templates\WhoAreYou\AboutUs.html" />
+      <script type="text/javascript">
+  window.location.href = "AboutUs";
+</script>
+-->
+
+<script>
+    setTimeout(function(){location.href="G:/My%20Drive/Personal/Slicebox/index.html"} , 3000);
+</script>
+
+   
+   
+    <link href="{% static 'WhoAreYou/styleshome.css' %}" rel="stylesheet"> 
+    <link href="{% static 'WhoAreYou/Background.css' %}" rel="stylesheet">
+    <link href="{% static 'WhoAreYou/styles.css' %}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&amp;display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <script src="G:\My Drive\Personal\MyWeb\WhoAreYou\static\WhoAreYou\app.js"></script>
+    <script {"% static 'app.js' %"}></script>
+</head>
+
+<body>
+
+<ul class="cb-slideshow">
+	<li>
+		<span>Image 01</span>
+		<div>
+			<h3></h3>
+		</div>
+	</li>
+	<li>
+		<span>Image 02</span>
+		<div>
+			<h3></h3>
+		</div>
+	</li>
+    <li>
+		<span>Image 03</span>
+		<div>
+			<h3></h3>
+		</div>
+	</li>
+    <li>
+		<span>Image 01</span>
+		<div>
+			<h3></h3>
+		</div>
+	</li>
+    <li>
+		<span>Image 01</span>
+		<div>
+			<h3></h3>
+		</div>
+	</li>
+    <li>
+		<span>Image 01</span>
+		<div>
+			<h3></h3>
+		</div>
+	</li>
+</ul>
+
+
+<div>
+    <h1 id="OneLine">Human Futures</h1>
+    <h1 id="SecLine"> Company </h1>
+ <!--   <p id="home-slogan">A company diversifed in what it does for gamers,</br> tenents, and all sorts of customers!</p>
+-->
+</div>
+
+<div id="NavMain">
+<a href="Home">Home</a> <a>|</a>
+<a href="AboutUs">About Us</a><a>|</a>
+<a href="GameStudio">Game Studio</a><a>|</a>
+<a href="url">Web Desgin</a><a>|</a>
+<a href="url">Real Estate</a><a>|</a>
+<a href="url">Farm</a>
+</div>
+
+<div class="container" id="quotePos">
+            <div id="quote" id="quotePos" id="OneLine">
+                "Don't forget: life is a race, if you don't run fast, you'll get trampled"
+            </div>
+            <div id="author">
+               - Anonymous 🎭
+            </div>
+        </div>
+    </body>
+  <script {"% static 'app.js' %"}></script>
+
+
+<!--
+<div id="left-side">
+<p>Hello, Blue</p>
+</div>
+
+
+
+<div id="center-side">
+</div>
+-->
+
+<div id="right-side2">
+</div>
+
+<!--Below is Test-->
+<script type="text/javascript">
+			$(function() {
+				
+				var Page = (function() {
+
+					var $navArrows = $( '#nav-arrows' ).hide(),
+						$shadow = $( '#shadow' ).hide(),
+						slicebox = $( '#sb-slider' ).slicebox( {
+							onReady : function() {
+
+								$navArrows.show();
+								$shadow.show();
+
+							},
+							orientation : 'r',
+							cuboidsRandom : true
+						} ),
+						
+						init = function() {
+
+							initEvents();
+							
+						},
+						initEvents = function() {
+
+							// add navigation events
+							$navArrows.children( ':first' ).on( 'click', function() {
+
+								slicebox.next();
+								return false;
+
+							} );
+
+							$navArrows.children( ':last' ).on( 'click', function() {
+								
+								slicebox.previous();
+								return false;
+
+							} );
+
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+			});
+		</script>
+
+<!--End of test-->
+
+
+
+</body>
+</html>
